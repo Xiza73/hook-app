@@ -2,12 +2,12 @@ import { Avatar, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
 import MessageIcon from "@mui/icons-material/Message";
 import { useLayoutEffect, useRef, useState } from "react";
 
-export interface QuoteProps {
+export interface QuoteLayoutProps {
   author: string;
   quote: string;
 }
 
-export const Quote: React.FC<QuoteProps> = ({ author, quote }) => {
+export const QuoteLayout: React.FC<QuoteLayoutProps> = ({ author, quote }) => {
   const pRef = useRef<HTMLParagraphElement>();
   const [boxSize, setBoxSize] = useState({
     width: 0,

@@ -3,7 +3,7 @@ import { useCounter, useFetch } from "@/hooks";
 import { Container, List } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 import { useEffect } from "react";
-import { Quote } from ".";
+import { QuoteLayout } from ".";
 
 const uri = "https://api.breakingbadquotes.xyz/v1/quotes";
 
@@ -59,7 +59,7 @@ export const Layout: React.FC = () => {
         {data &&
           !isLoading &&
           data.map(({ quote, author }) => (
-            <Quote key={quote} quote={quote} author={author} />
+            <QuoteLayout key={quote} quote={quote} author={author} />
           ))}
       </List>
       <div className="flex gap-4">

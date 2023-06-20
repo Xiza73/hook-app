@@ -8,6 +8,7 @@ import {
   Memo,
 } from "@/pages";
 import { HomeworkMemo } from "@/pages/HomeworkMemo";
+import { UseReducer } from "@/pages/UseReducer";
 
 export const Routes: {
   [key: string]: {
@@ -50,6 +51,11 @@ export const Routes: {
     path: "/homework-memo",
     element: <HomeworkMemo />,
     label: "Homework Memo",
+  },
+  USE_REDUCER: {
+    path: "/useReducer",
+    element: <UseReducer />,
+    label: "Use Reducer",
   },
 } as const;
 
